@@ -1,0 +1,139 @@
+
+<html>
+<head>
+  <title>Pricing Table</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .pricing-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .pricing-card {
+      background-color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .pricing-card .plan-name {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .pricing-card .price {
+      font-size: 2.5em;
+      font-weight: bold;
+      color: #ff6347;
+      margin-bottom: 20px;
+    }
+
+    .pricing-card .price span {
+      font-size: 0.5em;
+      color: #777;
+    }
+
+    .pricing-card .features {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+
+    .pricing-card .features li {
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    .pricing-card .cta-button {
+      background-color: #ff6347;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1em;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .pricing-card .cta-button:hover {
+      background-color: #e5533d;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .pricing-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .pricing-card {
+        width: 80%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="pricing-container">
+    <div class="pricing-card">
+      <div class="plan-name">Basic Plan</div>
+      <div class="price">$19 <span>/ month</span></div>
+      <ul class="features">
+        <li>10 GB Storage</li>
+        <li>5 Users</li>
+        <li>Email Support</li>
+      </ul>
+      <a href="#" class="cta-button">Choose Plan</a>
+    </div>
+
+    <div class="pricing-card">
+      <div class="plan-name">Pro Plan</div>
+      <div class="price">$49 <span>/ month</span></div>
+      <ul class="features">
+        <li>50 GB Storage</li>
+        <li>20 Users</li>
+        <li>Priority Support</li>
+      </ul>
+      <a href="#" class="cta-button">Choose Plan</a>
+    </div>
+
+    <div class="pricing-card">
+      <div class="plan-name">Premium Plan</div>
+      <div class="price">$99 <span>/ month</span></div>
+      <ul class="features">
+        <li>Unlimited Storage</li>
+        <li>Unlimited Users</li>
+        <li>24/7 Support</li>
+      </ul>
+      <a href="#" class="cta-button">Choose Plan</a>
+    </div>
+  </div>
+
+</body>
+</html>

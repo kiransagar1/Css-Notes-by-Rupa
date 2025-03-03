@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            css image gallery
+        </title>
+        <style>
+            body{ background-color:white;
+            text-align:center;}
+            h2{color:black}
+            .gallery img{width:50px%;
+            height:50px;
+        border-radius:5px;}
+        .gallery img:hover{
+            transform:scale(1.1);
+        }
+        @media(max-width:600px) {.gallery{grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
+        }
+        </style>
+    </head>
+    <body>
+        <h2> responsive css image gallery</h2>
+        <div class="gallery">
+            <img src="https://wallup.net/wp-content/uploads/2016/03/10/318375-nature-landscape-lake-mountain-forest-wildflowers-spring-pine_trees-path-Switzerland-HDR.jpg" alt="nature">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.4YhVE-Xfy9R-m6jvPKKdMAHaEo&pid=Api&P=0&h=180" alt="city">
+            <img src="http://cdn.wallpapersafari.com/84/22/5ycFYJ.jpeg" alt="river">
+            <img scr="https://avatars.githubusercontent.com/u/68487922?v=4?s=400" alt="kiransagar">
+            <img scr="https://tse1.mm.bing.net/th?id=OIP.Ay795HqzVD8XQ13x3sD6TgHaEd&pid=Api&P=0&h=180" alt="ooty">
+            <img scr="https://tse4.mm.bing.net/th?id=OIP.pJzA8Y13wtpAVRIxLY_6-wHaED&pid=Api&P=0&h=180" alt="munnar">
+        </div>
+    </body>
+</html>

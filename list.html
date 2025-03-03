@@ -1,0 +1,23 @@
+    <html>
+        <head>
+            <style>
+                ol.custom-numbers{list-style-type:none;
+                counter-reset:custom-counter;
+            padding-left:100;}
+            ol.custom-numbers li{
+                counter-increment:custom-counter;
+                margin-bottom:100px;
+            }
+            ol.custom-number li::before{content:counter(custom-counter)".";
+        font-weight:bold;
+    margin-right:100px;}
+            </style>
+        </head>
+        <body>
+            <ol class="custom-numbers">
+                <li>step one</li>
+                <li>step two</li>
+                <li>step three</li>
+            </ol>
+        </body>
+    </html>

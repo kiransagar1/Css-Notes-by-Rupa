@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>styled with html and css</title>
+    <style>
+        body{font-family:arial,sans-serif;
+        background-color:black;
+    height:100vh;}
+    form{background:burlywood;
+    padding:100px;
+border-radius:100px;
+box-shadow:100px 10px 10px gray
+}
+label{ 
+font-weight:bold;
+margin-top:10px
+}
+input,textarea{ width:100%;
+padding:8px;
+border:1px red}
+</style>
+</head>
+<body>
+<form>
+    <label for="name">name:</label>
+    <input type="text" id="name" name="name" placeholder="enter your name" required minlenght="3">
+
+    <label for="email">email:</label>
+    <input type="email" id="email" name="email" placeholder="enter yor email">
+
+    <label for="message">message:</label>
+    <textarea id="message" name="message" placeholder="type your message" rows="4" required minlenght="10"></textarea>
+    <button type="submit"> submit</button>
+</form>
+</body>
+</html>
